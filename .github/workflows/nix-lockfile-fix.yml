@@ -60,9 +60,16 @@ jobs:
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
+        if: ${{ steps.app-token.outputs.token != '' }}
         with:
           ref: main
-          token: ${{ steps.app-token.outputs.token || github.token }}
+          token: ${{ steps.app-token.outputs.token }}
+
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
+        if: ${{ steps.app-token.outputs.token == '' }}
+        with:
+          ref: main
+          token: ${{ github.token }}
 
       - uses: ./.github/actions/nix-setup
         with:
