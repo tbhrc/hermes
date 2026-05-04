@@ -1,0 +1,39 @@
+{
+  "updated_at": "2026-05-04T09:30:17.572481",
+  "platforms": {
+    "telegram": [
+      {
+        "id": "2053906913",
+        "name": "Talent Bridge Dubai",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "discord": [],
+    "whatsapp": [
+      {
+        "id": "208847113306345@lid",
+        "name": "David Potgieter | iMPLEMENTAi.ae and Talent Bridge Dubai",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "irc": [],
+    "teams": []
+  }
+}

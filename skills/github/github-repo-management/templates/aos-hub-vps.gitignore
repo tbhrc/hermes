@@ -1,0 +1,35 @@
+# AOS Hub VPS Root .gitignore (per AGENTS.md rules)
+# Sensitive files - NEVER commit
+.env
+.n8n/
+.openclaw/
+.ssh/
+.cache/
+.local/
+.config/
+.azure/
+.cloudflared/
+.copilot/
+.dotnet/
+.codex/
+.gemini/
+.npm/
+.vscode-server/
+.lesshst
+.wget-hsts
+
+# Python/Node caches
+__pycache__/
+venv/
+node_modules/
+*.pyc
+*.pyo
+
+# Nested git repos (separate projects)
+3_core_tools/hermes/engine/
+3_core_tools/hermes/data/
+.cache/uv/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+# Keep the backup focused on durable Hermes data.
+
+# Runtime and secrets
+.env
+.hermes_history
+.update_check
+*.lock
+*.pid
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Generated and transient state
+audio_cache/
+audio_inbox/
+cache/
+cron/output/
+logs/
+sessions/
+whatsapp/
+bin/
+__pycache__/
+*.pyc
+
